@@ -1,9 +1,9 @@
 class Sshscan < Formula
   desc "SSHScan is a simple utility for inspecting SSH key exchange settings on SSH servers"
   homepage "https://github.com/adedayo/sshscan"
-  url "https://github.com/adedayo/sshscan/releases/download/v0.1.0/sshscan_0.1.0_Darwin_x86_64.tar.gz"
-  version "0.1.0"
-  sha256 "32b1997e1b68aac42b223b26ab3ac55ad1b84dbb911d2454454ea8ab0157b02b"
+  url "https://github.com/adedayo/sshscan/releases/download/v0.1.1/sshscan_0.1.1_Darwin_x86_64.tar.gz"
+  version "0.1.1"
+  sha256 "114a06b2d416f464bdf62075e94a223b2598d6480e19e408c45fb9a531012399"
 
   def install
     bin.install "sshscan"
