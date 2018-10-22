@@ -3,7 +3,7 @@ class Tcpscan < Formula
   homepage "https://github.com/adedayo/tcpscan"
   url "https://github.com/adedayo/tcpscan/releases/download/v0.2.5/tcpscan_0.2.5_Darwin_x86_64.tar.gz"
   version "0.2.5"
-  sha256 "5f5620080e53328ab71944e66c719c14e52b0f6fc02b30701aaf7ba5b18edeac"
+  sha256 "5f90856be88719fc4d61756388af1c0ff9a638077fe135cc8e364c01a9add502"
 
   def install
     bin.install "tcpscan"
