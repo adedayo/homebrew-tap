@@ -2,14 +2,14 @@
 class BrowserTlsauditService < Formula
   desc "This is a simple services to collect TLS capabilities of a client browser"
   homepage "https://github.com/adedayo/browser-tls-audit"
-  version "0.2.4"
+  version "0.2.6"
 
   if OS.mac?
-    url "https://github.com/adedayo/browser-tls-audit/releases/download/v0.2.4/browser-tlsaudit-service_0.2.4_Darwin_x86_64.tar.gz"
-    sha256 "64a8d1563637f84d3ed49a7dbff4a313f6f7e09f987daa7ebdc90f08c6ce3254"
+    url "https://github.com/adedayo/browser-tls-audit/releases/download/v0.2.6/browser-tlsaudit-service_0.2.6_Darwin_x86_64.tar.gz"
+    sha256 "f36c3c6658004f40b522fef35e482ed62e94d977955b54316e38e4495dd1c6a1"
   elsif OS.linux?
-    url "https://github.com/adedayo/browser-tls-audit/releases/download/v0.2.4/browser-tlsaudit-service_0.2.4_Linux_x86_64.tar.gz"
-    sha256 "ca463d9f2a41b1288e7d572cf1cda2eebf84f326bfca1efeb1616eb67287077b"
+    url "https://github.com/adedayo/browser-tls-audit/releases/download/v0.2.6/browser-tlsaudit-service_0.2.6_Linux_x86_64.tar.gz"
+    sha256 "0c6c6be3607ef8416fc8309b3abc8a7ae056c99b3b09ddcd95416e7e040a758f"
   end
 
   def install
