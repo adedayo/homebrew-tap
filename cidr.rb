@@ -2,14 +2,14 @@
 class Cidr < Formula
   desc "CIDR is a simple utility to generate the IPv4 addresses in a CIDR range. It could also be used to check the membership of an IP v4 address in a CIDR range"
   homepage "https://github.com/adedayo/cidr"
-  version "0.1.4"
+  version "0.1.5"
 
   if OS.mac?
-    url "https://github.com/adedayo/cidr/releases/download/v0.1.4/cidr_0.1.4_Darwin_x86_64.tar.gz"
-    sha256 "23f9ccabb78db101b0ab6b00a00ab58da45eea55fc15727f398779a28dc1638d"
+    url "https://github.com/adedayo/cidr/releases/download/v0.1.5/cidr_0.1.5_Darwin_x86_64.tar.gz"
+    sha256 "927050d478c8035c4a59618598ee3fff1c47a1ccdcc890766fe6a8692c3af642"
   elsif OS.linux?
-    url "https://github.com/adedayo/cidr/releases/download/v0.1.4/cidr_0.1.4_Linux_x86_64.tar.gz"
-    sha256 "4b6cc3d9798b301ec649f804bdff5ef043345aa2f096d2b1ae5a942fc5ceca93"
+    url "https://github.com/adedayo/cidr/releases/download/v0.1.5/cidr_0.1.5_Linux_x86_64.tar.gz"
+    sha256 "a0a74d75c202e41301673eebf8928bc5a7d08280bb7e7f9d59404bbf8b9c1580"
   end
 
   def install
