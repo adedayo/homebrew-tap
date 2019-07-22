@@ -2,11 +2,11 @@
 class Tcpscan < Formula
   desc "TCPScan is a simple utility for discovering open (or closed) TCP ports on servers. It uses gopacket(https://github.com/google/gopacket) to craft SYN packets, listening asynchronously for (SYN-)ACK or RST responses without completing the full TCP handshake. TCPScan uses goroutines for asynchronous scans and it searches for the most likely listening ports first, using NMap's port frequency ordering. Anecdotal results show that TCPScan is really fast!"
   homepage "https://github.com/adedayo/tcpscan"
-  version "0.5.7"
+  version "0.5.8"
 
   if OS.mac?
-    url "https://github.com/adedayo/tcpscan/releases/download/v0.5.7/tcpscan_0.5.7_Darwin_x86_64.tar.gz"
-    sha256 "a67d4c9439b4ba688e934bd56d475f4acff485933d770f43f47cf3fc831c8fcf"
+    url "https://github.com/adedayo/tcpscan/releases/download/v0.5.8/tcpscan_0.5.8_Darwin_x86_64.tar.gz"
+    sha256 "179e4114166fda5192f89ce277f662c1100f4f785fb5603d3952c6bbdf4e99d1"
   elsif OS.linux?
   end
 
