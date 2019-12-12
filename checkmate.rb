@@ -2,16 +2,16 @@
 class Checkmate < Formula
   desc "CheckMate is a pluggable code security analysis tool."
   homepage "https://github.com/adedayo/checkmate"
-  version "0.0.1"
+  version "0.0.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/adedayo/checkmate/releases/download/v0.0.1/checkmate_0.0.1_Darwin_x86_64.tar.gz"
-    sha256 "6da479e76a692541c2717e322cc1180d741b98d4ff251fac5d51f42ed9e623b8"
+    url "https://github.com/adedayo/checkmate/releases/download/v0.0.2/checkmate_0.0.2_Darwin_x86_64.tar.gz"
+    sha256 "42f902eb0c976b5fb7083684ed360027f20a3681917d75035f3034f3e2213bd1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/adedayo/checkmate/releases/download/v0.0.1/checkmate_0.0.1_linux_x86_64.tar.gz"
-      sha256 "010d930a1087a830ac76a554d96ce1476515fbc30739fa788960d70a27b23503"
+      url "https://github.com/adedayo/checkmate/releases/download/v0.0.2/checkmate_0.0.2_linux_x86_64.tar.gz"
+      sha256 "102c0f74b0cc8ce282f0861dff6e6d9255f279bf6855c761e65b73e0ac2f398a"
     end
   end
 
