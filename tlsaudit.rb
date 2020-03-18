@@ -2,12 +2,12 @@
 class Tlsaudit < Formula
   desc "tlsaudit is a utility for auditing TLS (including SSL and STARTTLS) security settings. You can use it to enumerate protocols, ciphers and curves supported by an open TCP port."
   homepage "https://github.com/adedayo/tlsaudit"
-  version "0.6.8"
+  version "0.6.9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/adedayo/tlsaudit/releases/download/v0.6.8/tlsaudit_0.6.8_Darwin_x86_64.tar.gz"
-    sha256 "a8c508cffe2c8644544dcced6d35f30fa171421d0f1cd5f7ea10784d2aaced19"
+    url "https://github.com/adedayo/tlsaudit/releases/download/v0.6.9/tlsaudit_0.6.9_Darwin_x86_64.tar.gz"
+    sha256 "fda07ff72dc162fb7f72380ccb1acd996a77c9d0bb9f26cc05a99e3f2488a7e8"
   elsif OS.linux?
   end
 
