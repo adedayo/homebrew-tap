@@ -5,25 +5,25 @@
 class Checkmate < Formula
   desc "CheckMate is a code security analysis tool."
   homepage "https://github.com/adedayo/checkmate"
-  version "0.4.0"
+  version "0.4.1"
   license "BSD-3-Clause"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/adedayo/checkmate/releases/download/v0.4.0/checkmate_0.4.0_Darwin_x86_64.tar.gz"
-    sha256 "1b382256a469c8e4cc9b6abacf10c8fe69bcf558c3c6ca14c2585659108711a9"
+    url "https://github.com/adedayo/checkmate/releases/download/v0.4.1/checkmate_0.4.1_Darwin_x86_64.tar.gz"
+    sha256 "e36c33e1bd0bdfad794eaee8d0902289ce95fe2b1472f880be416a2155823d75"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/adedayo/checkmate/releases/download/v0.4.0/checkmate_0.4.0_linux_x86_64.tar.gz"
-    sha256 "0c2bce54c4724d07e051a19587e0c71e4e0cddfc6467d45eaf2800968e5c2c08"
+    url "https://github.com/adedayo/checkmate/releases/download/v0.4.1/checkmate_0.4.1_linux_x86_64.tar.gz"
+    sha256 "6a1562a945742f7af045e1f151e4f98c13690b2797ae95937355b7d4c46f65a7"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/adedayo/checkmate/releases/download/v0.4.0/checkmate_0.4.0_linux_armv6.tar.gz"
-    sha256 "08a35267c0f8c423fc1c43080e10e6c536dbf6afa287c352c7150f1adec404a8"
+    url "https://github.com/adedayo/checkmate/releases/download/v0.4.1/checkmate_0.4.1_linux_armv6.tar.gz"
+    sha256 "bef537e3e74029ca30fdbedb4f29e5f39f281d39f8b69720ffec9b15800cd8a4"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/adedayo/checkmate/releases/download/v0.4.0/checkmate_0.4.0_linux_arm64.tar.gz"
-    sha256 "4e9e4836e50e74fbe4e095e8823b6f710c590be2b69677d2e4ff68237fe0a5b7"
+    url "https://github.com/adedayo/checkmate/releases/download/v0.4.1/checkmate_0.4.1_linux_arm64.tar.gz"
+    sha256 "3a8b58221638af0f9a8167c5cae4b0b260990b912bae65589dffd1f3dc4db68c"
   end
 
   def install
