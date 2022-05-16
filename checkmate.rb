@@ -5,21 +5,21 @@
 class Checkmate < Formula
   desc "CheckMate is a code security analysis tool."
   homepage "https://github.com/adedayo/checkmate"
-  version "0.6.3"
+  version "0.6.4"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/adedayo/checkmate/releases/download/v0.6.3/checkmate_0.6.3_Darwin_arm64.tar.gz"
-      sha256 "0ccc30cd833653cd738aa35a3b7714a889d9dd63e6bd97ab5f1463884d563f70"
+      url "https://github.com/adedayo/checkmate/releases/download/v0.6.4/checkmate_0.6.4_Darwin_arm64.tar.gz"
+      sha256 "836ae33a12c954506527d91e22f102171f4294146116e7575e1caf0e1f41156d"
 
       def install
         bin.install "checkmate"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/adedayo/checkmate/releases/download/v0.6.3/checkmate_0.6.3_Darwin_x86_64.tar.gz"
-      sha256 "8786e4395ecb9ece75c801094ca21dfdb774b51e3031955221b4d1c8b6435947"
+      url "https://github.com/adedayo/checkmate/releases/download/v0.6.4/checkmate_0.6.4_Darwin_x86_64.tar.gz"
+      sha256 "33e8ab457c4299385ab5d45a895b84ea107c6749f57741aaa75caded57661efb"
 
       def install
         bin.install "checkmate"
@@ -29,24 +29,24 @@ class Checkmate < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/adedayo/checkmate/releases/download/v0.6.3/checkmate_0.6.3_linux_armv6.tar.gz"
-      sha256 "44de7696ad02833d511da4b6696d7d360ed3df2768e00c2da0e6f2878b036920"
+      url "https://github.com/adedayo/checkmate/releases/download/v0.6.4/checkmate_0.6.4_linux_armv6.tar.gz"
+      sha256 "5803a73ba804b01c8fe1fba9ff2651e825ce48059c8510210cebd80180ebd823"
 
       def install
         bin.install "checkmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adedayo/checkmate/releases/download/v0.6.3/checkmate_0.6.3_linux_arm64.tar.gz"
-      sha256 "cb925a716f96062db015f2d1551ff0055ff4d8917854786e6f24d2af277b08a7"
+      url "https://github.com/adedayo/checkmate/releases/download/v0.6.4/checkmate_0.6.4_linux_arm64.tar.gz"
+      sha256 "f3702fac6232f6cdf7dbb78860ed10e9d9ff201aea2d674cecc50031f30eae8f"
 
       def install
         bin.install "checkmate"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/adedayo/checkmate/releases/download/v0.6.3/checkmate_0.6.3_linux_x86_64.tar.gz"
-      sha256 "0c0c41a5f23413dcbd489a0024b942973e34ee09393789803c3b44f6eb46cc80"
+      url "https://github.com/adedayo/checkmate/releases/download/v0.6.4/checkmate_0.6.4_linux_x86_64.tar.gz"
+      sha256 "5fc43653cd71e34cc81bd99ff0dd3aaf7d127a7e3fc198e24e52aef00412cb03"
 
       def install
         bin.install "checkmate"
