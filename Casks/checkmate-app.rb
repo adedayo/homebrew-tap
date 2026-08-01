@@ -7,7 +7,7 @@ cask "checkmate-app" do
   desc "CheckMate Desktop Application"
   homepage "https://github.com/adedayo/checkmate-app"
 
-  app "checkmate-app.app"
+  app "CheckMate.app"
 
   zap trash: [
     "~/Library/Application Support/CheckMate",
