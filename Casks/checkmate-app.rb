@@ -1,8 +1,8 @@
 cask "checkmate-app" do
-  version "2.0.8"
-  sha256 "9b5d7eeadb3559adbf56df8cd0de46ba57ca1f5e029e9e1687061dd7ec89ad1d"
+  version "2.0.12"
+  sha256 "8bbcce36dc7d54cf89e81d0bfe3bac21626d05b4276b4042aa86f77fd8b93c07"
 
-  url "https://github.com/adedayo/checkmate-app/releases/download/v2.0.8/checkmate-app-macos-universal.dmg"
+  url "https://github.com/adedayo/checkmate-app/releases/download/v2.0.12/CheckMate-macos-universal.dmg"
   name "CheckMate"
   desc "CheckMate Desktop Application"
   homepage "https://github.com/adedayo/checkmate-app"
