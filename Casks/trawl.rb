@@ -3,10 +3,10 @@ cask "trawl" do
   # :no_check — that setting tells Homebrew to install whatever happens to be
   # at the URL, which removes the only integrity check in the install path and
   # is a strange thing for a security tool to ask its users to accept.
-  version "0.1.0"
-  sha256 "340a382e2a65ca9267b67fad0fd9ee169c09f22c9dee0c7253bc03281b1110e6"
+  version "0.1.1"
+  sha256 "a0b70ded0c609d9d8ecf03d37e40e54446f2813d165d9ed3e5188985a768d1dc"
 
-  url "https://github.com/adedayo/trawl/releases/download/v#{version}/Trawl-macos-universal.dmg",
+  url "https://github.com/adedayo/trawl/releases/download/v0.1.1/Trawl-macos-universal.dmg",
       verified: "github.com/adedayo/trawl/"
   name "Trawl"
   desc "Continuous external attack surface monitoring"
