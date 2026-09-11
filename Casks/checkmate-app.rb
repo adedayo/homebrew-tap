@@ -4,8 +4,8 @@ cask "checkmate-app" do
   # install whatever happens to be at the URL, which removes the only integrity
   # check in the macOS install path and is a strange thing for a security
   # scanner to ask its users to accept.
-  version "2.3.4"
-  sha256 "fce47307fef32f303fa950889b332b6de7a3d9d4d3ebf99f015ba15eb0737d16"
+  version "2.3.5"
+  sha256 "38cfaa3bf706cc881ad62d4364d2f35d98172e6550652f275e5f1d4386a902b5"
 
   url "https://github.com/adedayo/checkmate-app/releases/download/v#{version}/CheckMate-macos-universal.dmg",
       verified: "github.com/adedayo/checkmate-app/"
@@ -18,7 +18,10 @@ cask "checkmate-app" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :catalina"
+  # The symbol form already means "this version or newer". The string form,
+  # `">= :catalina"`, is deprecated and made Homebrew print a warning asking
+  # the tap to fix it on every invocation that touched this cask.
+  depends_on macos: :catalina
 
   # CheckMate.app, matching outputfilename in wails.json. The previous value
   # was "checkmate-app.app", which no build has ever produced — the cask would
