@@ -5,21 +5,21 @@
 class Checkmate < Formula
   desc "CheckMate is a code security analysis tool."
   homepage "https://github.com/adedayo/checkmate"
-  version "1.5.1"
+  version "1.5.2"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adedayo/checkmate/releases/download/v1.5.1/checkmate_Darwin_x86_64.tar.gz"
-      sha256 "75fdbfc1d06de8b7f06e0a9de98e4c11d5d2c192193706ce7b1b066fb7c3be75"
+      url "https://github.com/adedayo/checkmate/releases/download/v1.5.2/checkmate_Darwin_x86_64.tar.gz"
+      sha256 "d2118a1ea36f44ec2da69b3143624c7d1e4601d8a548011171e564fe5c36576b"
 
       define_method(:install) do
         bin.install "checkmate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adedayo/checkmate/releases/download/v1.5.1/checkmate_Darwin_arm64.tar.gz"
-      sha256 "431e27d234a3c80cacd5a63870d57527598ebd2d88715765be6ee979fae5562e"
+      url "https://github.com/adedayo/checkmate/releases/download/v1.5.2/checkmate_Darwin_arm64.tar.gz"
+      sha256 "311a3f0818baff6051b09870b5ba9d603b425260649c96e70af7f25b67af55f9"
 
       define_method(:install) do
         bin.install "checkmate"
@@ -29,15 +29,15 @@ class Checkmate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adedayo/checkmate/releases/download/v1.5.1/checkmate_Linux_x86_64.tar.gz"
-      sha256 "92e2facc970eb603dc91985894036e5849131b8ddc93ca8bc4cfb8cdfc5a9943"
+      url "https://github.com/adedayo/checkmate/releases/download/v1.5.2/checkmate_Linux_x86_64.tar.gz"
+      sha256 "400691f2642b9395f4be2c4f810133d9f38b92b17b2df2fcd0c5b4e05ff7aec4"
       define_method(:install) do
         bin.install "checkmate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adedayo/checkmate/releases/download/v1.5.1/checkmate_Linux_arm64.tar.gz"
-      sha256 "90d51f5bac46fbf17276d6bff3ea930ce4a8a3ee118e385f4912227592acd91b"
+      url "https://github.com/adedayo/checkmate/releases/download/v1.5.2/checkmate_Linux_arm64.tar.gz"
+      sha256 "b4c2723207de3f968b828e32bf7f267ba4a5ffd590cd6fae8ec17772b9c76834"
       define_method(:install) do
         bin.install "checkmate"
       end
