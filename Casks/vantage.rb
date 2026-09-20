@@ -7,25 +7,25 @@ cask "vantage" do
         must_succeed: false
   end
 
-  version "1.5.0"
+  version "1.6.0"
 
   on_macos do
     on_arm do
-      sha256 "d96927f00a34e6d1cd9b4d221b78f02248cb99ca396ac9016a6b12cac5a8b43c"
+      sha256 "d749ecaeabdd711a33073a2e489f0b5df5a918b19a6de06918926cba81147435"
       url "https://github.com/adedayo/vantage/releases/download/v#{version}/vantage_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3b6a5d633dcb2c40b4021c7e956c747d737257ef20a9a9a86d69644f2fc22e01"
+      sha256 "87af37b90a9ac392d18f3b337e9358aa9ebbc26b3d4f28cabeaf613941addf9e"
       url "https://github.com/adedayo/vantage/releases/download/v#{version}/vantage_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "63fd603629155d0a971413e44b8219c1566e7bc4cf2ffddc98d3696ded561869"
+      sha256 "2e93a3776fbbf4ad03d0583950a3f03382ebdc3c2dfa48e056115445fa3d4bc4"
       url "https://github.com/adedayo/vantage/releases/download/v#{version}/vantage_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b39c5094d1c6bea2fc85083bf375d0c35652002687a9f8e062276d42a0bd68a9"
+      sha256 "47f996a4ae5d3bc3de49a2db33367a886bb6d5f5078d00d98721ba23b5fb36f2"
       url "https://github.com/adedayo/vantage/releases/download/v#{version}/vantage_#{version}_linux_amd64.tar.gz"
     end
   end
