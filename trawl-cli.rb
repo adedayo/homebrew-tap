@@ -16,29 +16,29 @@
 class TrawlCli < Formula
   desc "Continuous external attack surface monitoring, headless server and CLI"
   homepage "https://github.com/adedayo/trawl"
-  version "0.1.1"
+  version "0.2.0"
   license "Apache-2.0"
   head "https://github.com/adedayo/trawl.git", branch: "main"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/adedayo/trawl/releases/download/v#{version}/trawl_Darwin_x86_64.tar.gz"
-      sha256 "0cada47d531b87b4b08b33991f3aedc1c174feff6dd90271018f28c2e907c3a3"
+      sha256 "7579ed29ce0b18794e8cb8b818aa3eb2e8a5dd5e733bc13d9dc8f3f6d9058254"
     end
     if Hardware::CPU.arm?
       url "https://github.com/adedayo/trawl/releases/download/v#{version}/trawl_Darwin_arm64.tar.gz"
-      sha256 "8b4480212518716d00d67d7499ff5da0dd620848a424f9ff955ee203aa6c906b"
+      sha256 "b04423f74ac351dfa0f24eb03e2609e7dbc680b7b85a767cd89e3b05f31d3c54"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/adedayo/trawl/releases/download/v#{version}/trawl_Linux_x86_64.tar.gz"
-      sha256 "48872aa1d42c2b199cf885713e317bbf71142f7335dc0f83f2f53b4616f5ec13"
+      sha256 "2cbf94e20be2b3a06372c204ac12018f5e143395a026864b8c4461a48797b010"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/adedayo/trawl/releases/download/v#{version}/trawl_Linux_arm64.tar.gz"
-      sha256 "46769819afb25614fbac1611891eca2c98faa3520d9318d323776633b2eace5f"
+      sha256 "0d79dff22ae2ecfee91928db7c17ca118bf06481acd582f5d87d80d4354bd473"
     end
   end
 
