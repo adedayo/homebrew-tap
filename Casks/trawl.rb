@@ -3,8 +3,8 @@ cask "trawl" do
   # :no_check — that setting tells Homebrew to install whatever happens to be
   # at the URL, which removes the only integrity check in the install path and
   # is a strange thing for a security tool to ask its users to accept.
-  version "0.2.2"
-  sha256 "c77c6e0a712730753d51503a66a5e58d61a6a2b1b2f85b8bc3268dab6d429909"
+  version "0.3.1"
+  sha256 "6de650ed1afbbc1d92250f118715a9a3ab6bd9005760d911b5ec09dcacb0e52a"
 
   # No `verified:` parameter. It is deprecated: it existed to assert that a URL
   # whose host differs from the homepage is nevertheless the right one, and
