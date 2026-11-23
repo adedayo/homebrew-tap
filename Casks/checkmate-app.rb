@@ -4,8 +4,8 @@ cask "checkmate-app" do
   # install whatever happens to be at the URL, which removes the only integrity
   # check in the macOS install path and is a strange thing for a security
   # scanner to ask its users to accept.
-  version "2.3.6"
-  sha256 "5a3e64b83164d0e9900b75ae653b6f61b5795af265476a4a9c492f1dfd617396"
+  version "2.4.1"
+  sha256 "1926f5ca4d9ac846dca1e47484448b3768cec414b17523a8e062b85d4b6aea47"
 
   # No `verified:` parameter. It is deprecated: it existed to assert that a URL
   # whose host differs from the homepage is nevertheless the right one, and
